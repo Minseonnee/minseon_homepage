@@ -1,0 +1,2946 @@
+/*
+    Author: TrendyTheme
+    Template: I AM X
+    Version: 1.2
+    URL: http://demo.trendytheme.net/iamx/html
+*/
+
+
+/*
+====================================
+------------------------------------
+    1. General
+    2. Typography
+    3. Home
+    4. Navigation
+    5. About
+    6. Portfolio
+    7. Artwork
+    8. Resume
+    9. Skill
+    10. Chart
+    11. Footer
+-------------------------------------
+=====================================
+*/
+
+@font-face {
+    font-family: 'Paperlogy-5Medium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard';
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #333333;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+/* Link style
+==================================================*/
+a {
+    color: #333333;
+}
+
+a,
+a>* {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    outline: none;
+    color: #333333;
+    text-decoration: none;
+}
+
+
+/* Transition elsements
+================================================== */
+.navbar a,
+.form-control {
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+a,
+.btn {
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    transition: all 0.125s ease-in-out 0s;
+}
+
+/* Reset box-shadow
+/* ================================================== */
+
+.btn,
+.form-control,
+.form-control:hover,
+.form-control:focus,
+.navbar-custom .dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+
+
+/* === Typography ===================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin: 0;
+    /* text-transform: uppercase; */
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+
+
+/* === FORM STYLE ===================================================== */
+.form-control {
+    height: 45px;
+    background-color: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #68c3a3;
+    box-shadow: none;
+}
+
+
+
+
+/* Alert Style
+==================================================*/
+.alert {
+    padding: 10px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.alert strong {
+    display: inline-block !important;
+    margin: 0 !important;
+}
+
+
+
+/* BUTTON STYLE
+==================================================*/
+/*common-btn*/
+.btn {
+    border: 0;
+    border-bottom: 3px solid;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 28px;
+    padding: 9px 22px;
+}
+
+/*large-btn*/
+.btn-lg,
+.btn-group-lg>.btn {
+    padding: 14px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/*btn-primary*/
+.btn-primary {
+    background-color: #68c3a3;
+    border-color: rgba(51, 51, 51, 0.15);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #4eb28f;
+    border-color: #4eb28f;
+}
+
+/*btn-info*/
+.btn-info {
+    background-color: #52b3d9;
+    border-color: rgba(51, 51, 51, 0.15);
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.focus,
+.btn-info:active,
+.btn-info.active,
+.open>.dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: #4aa0c2;
+    border-color: #4aa0c2;
+}
+
+/*btn-default*/
+.btn-default {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active {
+    color: #68c3a3;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+
+/*IMAGES
+==================================================*/
+img {
+    width: 100%;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+/* LIST STYLE
+================================================== */
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+
+ul.list-check {}
+
+ul.list-check li {
+    position: relative;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+ul.list-check li::before {
+    font-family: 'Pretendard';
+    margin-right: 10px;
+}
+
+
+/* === MAIN ===================================================== */
+.section-padding {
+    padding: 120px 0 100px;
+}
+
+
+/* SECTION TITLE
+================================================== */
+.section-title {
+    margin-bottom: 80px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 50px;
+    color: #2471A8;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    height: 15px;
+    width: 113px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    margin: 0 auto;
+}
+
+
+.main_project_h2{
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+/* === HOME ===================================================== */
+@media (max-width : 640px) {
+    .tt-fullHeight {
+        height: 560px !important;
+    }
+}
+
+
+#home {
+    -webkit-background-attachment: fixed;
+    background-attachment: fixed;
+    /* background-color: #222; */
+    background-size: cover;
+    padding: 0;
+    position: relative;
+}
+
+#home:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+video{
+    width: 100%;
+    display: block;
+}
+.m{
+    display: none;
+}
+
+/* === NAVIGATION ===================================================== */
+
+
+
+
+
+
+
+
+
+
+/* 내가만든 css */
+
+
+
+#minseon_header{
+    margin: 0 auto;
+    align-items: center;
+    height: 800px;
+    background: url(../images/5-2.jpg) no-repeat center;
+}
+
+#minseon_header>h1{
+    margin: 0 auto;
+    width: 900px;
+    height: 800px;
+    padding-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 내가 만든scc!!! */
+
+
+.header {
+    border-bottom: 1px solid #eee;
+    position: relative;
+    width: 100%;
+    z-index: 998;
+    padding-bottom: 1px;
+    background: #fff;
+}
+
+
+.header::after {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: 1px;
+    left: 0;
+}
+
+.navbar-custom {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    /* text-transform: uppercase; */
+    font-family: 'Pretendard';
+}
+
+
+.navbar-custom,
+.navbar-custom .dropdown-menu {
+    background: #fff;
+    padding: 0;
+}
+
+.navbar-custom ul li a span {
+    margin-left: 5px;
+}
+
+.navbar-custom .dropdown-menu {
+    margin-top: 10px;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    border: 1px solid #ddd;
+    border-top: 2px solid #287DBA;
+    border-radius: 0;
+    border-bottom: 3px double #ddd;
+    background-color: #FFFFFF;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.navbar-right .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+
+.navbar-custom .navbar-nav>li:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    margin-top: -2px;
+}
+
+.navbar-custom .navbar-nav>li>a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.navbar-custom .dropdown-menu>li {
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.navbar-custom .dropdown-menu>li:last-child {
+    border-bottom: 0;
+}
+
+.navbar-custom .dropdown-menu>li>a {
+    padding: 10px 20px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar-custom .nav li.active,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .navbar-nav>li.active>a {
+    background: none;
+    outline: 0;
+    color: #2471A8;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.navbar-custom .nav .open>a,
+.navbar-custom .dropdown-menu>li>a:hover,
+.navbar-custom .dropdown-menu>li>a:focus {
+    background: #f5f5f5;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background: #2471A8;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+.navbar-nav>li {
+    width: calc(100% / 6);
+    text-align: center;
+}
+.nav>li>a {
+    padding: 0px;
+}
+
+.li1{
+    margin-left: -75px;
+}
+
+.li2{
+    margin-left: 20px;
+}
+
+.li3{
+    margin-left: 20px;
+}
+.li4{
+    margin-left: 20px;
+}
+.li5{
+    margin-left: 15px;
+}
+
+
+
+
+
+/* === About Section ===================================================== */
+.short-info {
+    margin-bottom: 40px;
+}
+
+.short-info h3 {
+    margin-bottom: 30px;
+}
+
+.short-info ul {
+    margin-top: 10px;
+    /* display: inline-block; */
+}
+
+.short-info ul li {
+    /* width: 90%; */
+    /* float: left; */
+}
+
+.my-signature {
+    margin-bottom: 45px;
+}
+
+.my-signature img {
+    width: inherit;
+}
+
+.container p{
+    letter-spacing: -0.3px;
+    font-weight: 500;
+}
+.about_m{
+    padding-top: 20px;
+}
+.about_m h3{
+    line-height: 1.5;
+}
+
+.hashtag{
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hashtag li span{
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.hashtag .bg_red span{
+    background-color: #d03131;
+    color: #fff;
+}
+.hashtag li:hover span{
+    background-color: #d03131;
+    color: #fff;
+}
+.tag_m{
+    padding-top: 50px;
+}
+
+
+
+/*download-button
+==================================================*/
+.download-button a {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.download-button a i {
+    margin-right: 10px;
+}
+
+.col-md-7{
+    width: auto !important;
+    float: none; 
+}
+
+
+.short-info{
+    margin-top: -30px;
+    margin-left: -120px;
+    width: 700px;
+    position: absolute;
+    right: 20px;
+}
+
+#about{
+    position: relative;
+}
+
+.col-md-7{
+    width: 400px;
+}
+
+.biography {
+    /* width: 40%; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+
+.short-info>p{
+    font-size: 16px;
+}
+
+.minseon_aboutme_ul{
+    margin-top: 250px;
+    margin-left: -345px;
+    font-size: 18px;
+    width: 580px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.minseon_aboutme_ul li a{
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #2471A8;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #2471A8;
+    background: linear-gradient(to right, #2471A8 0%, #2471A8 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease, color 0.3s ease;
+
+}
+
+.minseon_aboutme_ul li a:hover {
+    background-size: 100% 100%;  /* 왼쪽 → 오른쪽으로 채워짐 */
+    color: #fff;                 /* 글자색 반전 */
+}
+
+.minseon_aboutme_ul li{
+    margin-bottom: 20px;
+    width: 20%;
+    margin-right: 60px;
+}
+
+
+.biography::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    /* width: 100%; */
+    border-radius: 10px;
+    height: 20px;
+}
+
+
+.myphoto {
+    position: relative;
+    /* background: url(../../assets/images/myphoto.png) bottom center no-repeat; */
+    height: 300px;
+    background-size: contain;
+    width:  auto !important;
+}
+
+.myphoto img {
+    position: absolute;
+    z-index: 2;
+}
+.effect01{
+    margin-left: 0px;
+    width: 300px;
+    top: -20px;
+    /* right: 100px; */
+}
+/* .effect02{
+    width: 70px;
+    bottom: 70px;
+    right: -25px;
+} */
+.note{
+    width: 100px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.biography ul {
+    padding: 25px 20px 30px;
+}
+
+.biography ul li {
+    padding: 5px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.biography ul li:last-child {
+    border-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* === Portfolio Section ===================================================== */
+
+
+
+.add p{
+    font-family: 'Pretendard';
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #333;
+    padding: 20px 0;
+}
+.add .section-title{
+    margin-bottom: 0;
+}
+
+.latest-blog-section {}
+
+.post-thumbnail img{
+}
+
+
+
+
+
+.blog-post-wrapper {
+    margin-bottom: 30px;
+}
+
+.blog-post-wrapper {
+  margin-bottom: 30px;
+  height: 520px; /* 원하는 높이로 맞추기 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+   min-height: 520px;
+}
+/* .post-thumbnail img {
+  object-fit: contain;
+  height: 300px;
+  width: 100%;
+} */
+
+.post-thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  height: 400px; /* 카드 이미지 높이 통일 */
+  overflow: hidden; /* 둥근모서리 안으로 자르기 */
+  border-radius: 20px; /* 원하는 모서리 값 */
+}
+
+
+#portfolio .col-sm-6:nth-child(2) .post-thumbnail img{
+  object-fit: contain;            /* 박스는 그대로 채우고 */
+  object-position: center center;  /* 이미지를 위쪽에 붙임 */
+}
+.post-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+   object-position: center;
+    display:block;
+  border-radius: inherit; /* 부모의 border-radius 계승 */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.blog-post-wrapper:hover img {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+
+
+
+.figure {
+    position: relative;
+}
+
+.post-thumbnail {
+
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.post-thumbnail img {
+    opacity: 0.8;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.blog-post-wrapper:hover img {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.entry-header {
+    padding: 0 12px;
+}
+
+.the-category {
+    font-family: 'Paperlogy-5Medium';
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#about{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.short-info{
+    margin-left: -300px;
+}
+
+
+
+.row .entry-title {
+    font-family: 'Pretendard';
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #666;
+}
+
+.entry-title {
+    color: #282828;
+}
+
+.the-time {
+    color: #BBBBBB;
+    font-weight: 400;
+}
+
+.blog-post-wrapper:hover .the-category,
+.blog-post-wrapper:hover .entry-title,
+.blog-post-wrapper:hover .the-time{
+    color: #287DBA;
+}
+
+
+/*
+Icon for all respective meta
+====================================== */
+.the-time::before {
+    content: "\f133";
+}
+
+.the-time {
+    position: relative;
+    padding-left: 20px;
+}
+
+.the-time::before {
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+}
+
+.fa-home:before {
+    font-size: 22px;
+}
+
+.fa-mobile:before {
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* === SNS-design Section ===================================================== */
+.sns-item {
+    min-height: 235px;
+}
+
+.sns-bg {
+    /* margin-bottom: 20px; */
+    border: 1px solid #eee;
+}
+
+.sns {
+    position: relative;
+    overflow: hidden;
+}
+
+.sns-overlay {
+    position: absolute;
+    background-color: rgba(26, 30, 31, 0.85);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.sns-info,
+.links,
+.sns-overlay {
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.sns-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background-color: #d03131;
+    color: #fff;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+.sns:hover .tt-overlay,
+.sns:hover .links {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.sns:hover .sns-info {
+    bottom: 0;
+}
+
+.sns-info h3 {
+    font-size: 14px;
+    line-height: 45px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+
+
+
+/* === Artwork Section ===================================================== */
+.art_m{
+    margin: 40px 0;
+}
+.works-section {
+    background-color: #f7f7f7;
+}
+
+.portfolio-item {
+    min-height: 235px;
+}
+
+.portfolio-bg {
+    /* background: #fff; */
+    /* padding-bottom: 5px; */
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.portfolio {
+    position: relative;
+    overflow: hidden;
+}
+
+.tt-overlay {
+    position: absolute;
+    background-color: rgba(26, 30, 31, 0.85);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.portfolio-info,
+.links,
+.tt-overlay {
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.portfolio-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background-color: #d03131;
+    color: #fff;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio:hover .tt-overlay,
+.portfolio:hover .links {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.portfolio:hover .portfolio-info {
+    bottom: 0;
+}
+
+.portfolio-info h3 {
+    font-size: 14px;
+    line-height: 45px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+
+.mfp-bottom-bar{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Resume Section ===================================================== */
+
+/*---------------------------------------------------------
+Resume Timeline
+-----------------------------------------------------------*/
+
+
+/* 여기서부터 */
+
+ #resume .resume-two-col {
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+    }
+    #resume .resume-two-col > .col-md-6 { flex: 1; min-width: 0; }
+
+    /* 각 칼럼 타임라인: 중앙선(50%) → 왼쪽으로 고정 */
+    #resume .resume-two-col .timeline:before {
+      left: 0;
+      transform: none;
+    }
+
+    /* 교차 배치 제거: 패널 전체폭 사용 + 왼쪽 정렬 */
+    #resume .resume-two-col .timeline > li .timeline-panel,
+    #resume .resume-two-col .timeline > li.timeline-inverted .timeline-panel {
+      float: none;
+      width: 100%;
+      text-align: left;
+    }
+
+    /* 말풍선 삼각형도 왼쪽 기준 */
+    #resume .resume-two-col .timeline > li .timeline-panel::before {
+      left: -15px; right: auto;
+      border-left: 12px solid #ECECEC;
+      border-right: 0;
+    }
+    #resume .resume-two-col .timeline > li .timeline-panel::after {
+      left: -14px; right: auto;
+      border-left: 12px solid #fff;
+      border-right: 0;
+    }
+    #resume .resume-two-col .timeline > li .timeline-panel:hover::before {
+      border-left-color: #2471A8; /* 필요 시 브랜드 컬러로 변경 */
+    }
+
+    /* 모바일에서는 세로 스택 */
+    @media (max-width: 991px){
+      #resume .resume-two-col { display: block; }
+    }
+
+    #resume .resume-title{
+  display:flex; align-items:center; gap:10px;
+  margin-bottom: 18px; position:relative;
+}
+
+#resume .resume-title img{ position:static; width:24px; height:24px; transform:none; }
+#resume .resume-title h3{ margin:0; text-align:left; color:#222; font-weight:700; letter-spacing:.2px; }
+#resume .rt2{ margin-top:0; } /* 불필요한 큰 여백 제거 */
+
+/* 두 칼럼 배치 */
+#resume .resume-two-col{ display:flex; gap:80px; align-items:flex-start; }
+#resume .resume-two-col > .col-md-6{ flex:1; min-width:0; }
+@media (max-width: 991px){
+  #resume .resume-two-col{ display:block; }
+  #resume .resume-two-col > .col-md-6 + .col-md-6{ margin-top:48px; }
+}
+
+/* --- 왼쪽 라인 고정 타임라인 모드 ----------------------------------- */
+#resume .timeline.timeline--left{
+  position:relative; list-style:none; padding:0 0 0 36px; margin:0;
+}
+
+/* 중앙선 → 왼쪽으로 이동 */
+#resume .resume-two-col .timeline.timeline--left::before{
+  content:""; position:absolute; top:0; bottom:0; left:12px; width:2px;
+  background:#E6EDF3; /* 얇은 연회색 라인 */
+}
+
+/* 각 아이템 간격 */
+#resume .timeline.timeline--left > li{
+  position:relative; margin:18px 0 28px;
+}
+
+/* li에 점(도트) 찍기 */
+#resume .timeline.timeline--left > li::after{
+  content:""; position:absolute; left:6px; top:14px; width:12px; height:12px; border-radius:50%;
+  background:#fff; box-shadow:0 0 0 3px #63C7F3;  /* 하늘색 도트 외곽 */
+}
+
+/* 카드(패널) – 한 줄 흐름, 왼쪽 정렬 */
+#resume .resume-two-col .timeline.timeline--left > li .timeline-panel{
+  float:none !important; width:auto !important; text-align:left !important;
+  background:#fff; border:1px solid #eee; border-radius:10px;
+  padding:16px 18px; box-shadow:0 1px 0 rgba(0,0,0,.03);
+}
+
+/* 가운데 교차/삼각형 모두 제거 */
+#resume .resume-two-col .timeline.timeline--left > li .timeline-panel::before,
+#resume .resume-two-col .timeline.timeline--left > li .timeline-panel::after,
+#resume .resume-two-col .timeline.timeline--left > li.timeline-inverted .timeline-panel::before,
+#resume .resume-two-col .timeline.timeline--left > li.timeline-inverted .timeline-panel::after{
+  content:none !important; display:none !important;
+}
+
+/* 데스크탑용 중앙 배치 규칙들 무력화 */
+#resume .resume-two-col .timeline.timeline--left > li .posted-date{
+  position:static !important; left:auto !important; text-align:left; background:transparent;
+}
+
+/* 타이포(피그마 느낌) */
+#resume .timeline.timeline--left .timeline-heading p{
+  display:inline-block; margin:0 0 8px; padding:3px 10px;
+  font-size:12px; line-height:20px; color:#fff; background:#404040; border-radius:999px;
+}
+#resume .timeline.timeline--left .timeline-heading h3{
+  margin:0 0 6px; font-size:18px; line-height:1.4; color:#222; font-weight:700;
+}
+#resume .timeline.timeline--left .timeline-heading span{
+  display:block; color:#666; margin:0;
+}
+
+/* 원래 “센터 타임라인” 스타일이 다시 끼어드는 것 방지(우선순위↑) */
+@media (min-width: 992px){
+  #resume .resume-two-col .timeline.timeline--left > li{ min-height:unset !important; }
+  #resume .resume-two-col .timeline.timeline--left .timeline-content{ padding:16px 18px; }
+}
+
+.timeline-panel{}
+
+
+#resume .resume-two-col .timeline.timeline--left::before{
+  left:12px;
+}
+
+/* 도트: li 기준이라 보정 필요
+   공식: left = 12px(라인) - 36px(ul padding-left) - (도트/2)
+   도트 14px이면 => 12 - 36 - 7 = -31px  */
+#resume .timeline.timeline--left > li{
+  position: relative;
+}
+#resume .timeline.timeline--left > li::after{
+  content:"";
+  position:absolute;
+  top:12px;               /* 필요하면 10~16px 사이로 미세조정 */
+  left:-31px;             /* ← 라인 한가운데 정확히 겹침 */
+  width:14px; height:14px;
+  border-radius:50%;
+  background:#63C7F3;     /* 안 채워짐 → 채워지도록 */
+  border:2px solid #63C7F3; /* 테두리도 같은 색 (원하면 지워도 됨) */
+  box-shadow:none;        /* 예전의 파란 외곽선 제거 */
+}
+
+
+
+/* 여기까지 내가만듬 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.resume-title{
+    position: relative;
+}
+.resume-title img{
+    width: inherit;
+    position: absolute;
+    top: -300%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.resume-title h3 {
+    text-align: center;
+    color: #404040;
+}
+.rt2{
+    margin-top: 200px;
+}
+
+.resume-section>div>div {
+    margin-bottom: 60px;
+}
+
+.resume-section>div>div:nth-of-type(2) {
+    margin-bottom: 0;
+}
+
+.resume-title {
+    margin-bottom: 30px;
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.resume {
+    position: relative;
+}
+
+/* .resume:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    border: 3px solid #d03131;
+    z-index: 5;
+} */
+
+/* .resume:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    width: 10px;
+    height: 10px;
+    background-color: #e1e1e1;
+    left: 50%;
+    margin-left: -6px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+} */
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-left: -1.5px; */
+    background-color: #2471A8;
+}
+
+.timeline>li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.timeline-content {
+    padding: 5px 20px 0 20px;
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .posted-date {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    left: 20px;
+}
+
+
+/* .timeline>li .posted-date .month {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    display: block;
+    color: #2c3e50;
+    top: 0;
+    float: left;
+} */
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-heading p{
+    display: inline-block;
+    background-color: #404040;
+    padding: 0 10px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.timeline-heading h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.timeline-heading span {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.posted-date :before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    border: 3px solid #2471A8;
+    z-index: 5;
+}
+
+
+
+
+
+@media(min-width:992px) {
+    .timeline:before {
+        left: 50%;
+    }
+
+    .timeline>li {
+        margin-bottom: 15px;
+        min-height: 100px;
+    }
+
+    .timeline>li .posted-date {
+        position: absolute;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 43%;
+        text-align: right;
+        position: relative;
+    }
+
+    .timeline-content {
+        position: relative;
+        padding: 24px;
+        background-color: #fff;
+        -webkit-transition: all 400ms;
+        -moz-transition: all 400ms;
+        -o-transition: all 400ms;
+        transition: all 400ms;
+    }
+
+    /* .timeline-content::after {
+        border: 1px solid #eee;
+        width: 100%;
+        position: absolute;
+        content: "";
+        bottom: -3px;
+        height: 10px;
+        left: 0;
+        z-index: -1;
+    } */
+
+    /* .timeline>li .timeline-content:hover {
+        background: #68c3a3;
+        color: #fff;
+    } */
+
+    .timeline>li .timeline-content{
+        border: 1px solid #eee;
+    }
+    .timeline>li .timeline-content:hover{
+        border: 1px solid #2471A8;
+    }
+    
+
+    .timeline>li .timeline-panel::before,
+    .timeline>li.timeline-inverted .timeline-panel::before {
+        content: "";
+        top: 25px;
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+
+    .timeline>li .timeline-panel::before {
+        left: 100%;
+        border-left: 12px solid #ECECEC;
+        -webkit-transition: all 400ms;
+        -moz-transition: all 400ms;
+        -o-transition: all 400ms;
+        transition: all 400ms;
+    }
+
+    /* 좌측 패널 삼각형 라인컬러  */
+    .timeline>li .timeline-panel:hover::before {
+        border-left: 12px solid #d03131;
+    }
+
+    .timeline>li.timeline-inverted .timeline-panel::before {
+        right: 100%;
+        border-right: 12px solid #ECECEC;
+        -webkit-transition: all 400ms;
+        -moz-transition: all 400ms;
+        -o-transition: all 400ms;
+        transition: all 400ms;
+    }
+
+    /* 우측 패널 삼각형 라인컬러  */
+    .timeline>li.timeline-inverted .timeline-panel:hover::before {
+        border-right: 12px solid #d03131;
+        border-left: 0;
+    }
+
+    .timeline>li .timeline-panel::after,
+    .timeline>li.timeline-inverted .timeline-panel::after {
+        content: "";
+        top: 25px;
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+
+    .timeline>li .timeline-panel::after {
+        left: 100%;
+        margin-left: -2px;
+        border-left: 12px solid #FFFFFF;
+        -webkit-transition: all 400ms;
+        -moz-transition: all 400ms;
+        -o-transition: all 400ms;
+        transition: all 400ms;
+    }
+
+    /* 좌측패널 삼각형 인컬러 */
+    .timeline>li .timeline-panel:hover::after {
+        border-left: 12px solid #fff;
+    }
+
+    .timeline>li.timeline-inverted .timeline-panel::after {
+        right: 100%;
+        margin-right: -2px;
+        border-right: 12px solid #FFFFFF;
+        -webkit-transition: all 400ms;
+        -moz-transition: all 400ms;
+        -o-transition: all 400ms;
+        transition: all 400ms;
+    }
+
+    /* 우측패널 삼각형 인컬러 */
+    .timeline>li.timeline-inverted .timeline-panel:hover::after {
+        border-right: 12px solid #fff;
+        border-left: 0;
+    }
+
+    .timeline>li .posted-date {
+        left: 50%;
+        width: 120px;
+        margin-left: -60px;
+        margin-top: 28px;
+    }
+
+    .timeline>li .posted-date .month {
+        float: none;
+    }
+
+    
+}
+
+
+
+/* Skill Section
+================================================== */
+.skills-section {
+    color: #333;
+}
+
+#skills{
+    background-color: #e9f0f5;
+}
+
+.chart-text span{
+    color: #49494a;
+}
+.skill-chart{
+    text-align: left;
+    padding: 60px 0;
+
+}
+.skills-section .section-title {
+    color: #2471A8;
+    margin-bottom: 30px;
+}
+
+.skills-section .section-title h2 {
+    color: #000;
+}
+
+.skill-title {
+    width: 25%;
+    float: left;
+}
+
+.skill-title h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -6px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+
+/* progress-bar ==================================================*/
+
+.skill-progress {
+    position: relative;
+}
+
+.progress {
+    height: 10px;
+    margin-bottom: 40px;
+    background-color: #ccc;
+    border-radius: 3px;
+    box-shadow: none;
+    width: 75%;
+}
+
+.progress-bar {
+    background-color: #2471A8;
+}
+
+.progress-bar span {
+    color: #333;
+    position: absolute;
+    top: -20px;
+    right: 15px;
+}
+
+.progress .progress-bar.six-sec-ease-in-out {
+    -webkit-transition: width 2s ease-in-out;
+    -moz-transition: width 2s ease-in-out;
+    -o-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+}
+
+
+.skill-chart h3 {
+    margin-top: 20px;
+}
+
+.our-progress {
+    margin: 10px 0 30px;
+}
+
+.progress-percent {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-progress h3 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+
+
+/* === Chart CSS  ===================================================== */
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.percent {
+    display: inline-block;
+    margin: auto;
+    line-height: 140px;
+    z-index: 2;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.percent:after {
+    content: '%';
+}
+
+.chart-text span {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: block;
+    margin-top: 20px;
+}
+
+/*.percent:after {content: '%';margin-left: 0.1em;font-size: .8em;}*/
+.angular {
+    margin-top: 100px;
+}
+
+.angular .chart {
+    margin-top: 0;
+}
+
+.chart .chart-text h3 {
+    font-size: 22px;
+}
+
+
+
+/* interview
+==================================================*/
+.interview-section{
+    background-color: #D3E8F4;
+}
+.interview-title ul li{
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+}
+.interview-title h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.interview-title p{
+    font-weight: 400;
+    padding-top: 15px;
+    line-height: 1.5;
+}
+.interview-title span{
+    color: #d03131;
+    font-weight: 600;
+}
+
+
+
+
+
+/* contact
+==================================================*/
+
+.contact_in {
+    text-align: left;
+}
+
+.contact-title img{
+    width: 15%;
+}
+.contact-f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.con_text{
+    width: 30%;
+    padding-left: 20px;
+}
+.con_text p{
+    margin: 0;
+}
+.social {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social li a {
+    color: #333;
+    font-size: 35px;
+    margin-right: 15px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+.social li a:hover {
+    color: #425BB5;
+}
+
+
+
+
+/*PopUp fade effect==================================================*/
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    /* ideally, transition speed should match zoom duration */
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+
+/* === Footer Wrapper ===================================================== */
+.footer-wrapper {
+    background: #D3E8F4;
+    padding: 20px 0;
+    color: #333;
+
+}
+
+.copyright p {
+    margin: 0;
+}
+
+
+/* ---------------------------------------------- /*
+ * Scroll to top
+/* ---------------------------------------------- */
+
+.scroll-up {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    bottom: 1.8em;
+    right: 1.8em;
+}
+
+.scroll-up a {
+    background-color: #174a67;
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.scroll-up a:hover,
+.scroll-up a:active {
+    background-color: rgba(235, 235, 235, .8);
+    color: #222;
+}
+
+/* ---------------------------------------------- /*
+ * Mouse animate icon
+/* ---------------------------------------------- */
+
+.mouse-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    border: 2px solid #2471A8;
+    border-radius: 16px;
+    height: 50px;
+    width: 30px;
+    margin-left: -17px;
+    display: block;
+    z-index: 10;
+}
+
+.mouse-icon .wheel {
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #2471A8;
+    width: 4px;
+    height: 10px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@-webkit-keyframes drop {
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
+}
+
+
+@keyframes drop {
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
+}
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#tt-preloader {
+    background: #FFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#pre-status,
+.preload-placeholder {
+    background-image: url(../images/preloader.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+}
+
+.preload-placeholder {
+    background: none;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    top: 65%;
+}
+
+
+
+
+
+/* === Home Page Two === */
+
+#homeTwo {
+    background: url(../images/home-2.jpg) no-repeat center center;
+    background-color: #222;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+}
+
+/* === About Section === */
+.short-info {
+    margin-bottom: 40px;
+}
+
+.short-info h3 {
+    margin-bottom: 30px;
+}
+
+.hobby-list-wrap h3 {
+    margin-bottom: 45px;
+}
+
+.hobby-list span {
+    border: 1px solid #eee;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-bottom: 3px double #eee;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+}
+
+.hobby-list span:nth-child(4),
+.hobby-list span:nth-child(5),
+.hobby-list span:nth-child(6) {
+    margin-bottom: 0;
+}
+
+
+
+/*SERVICE SECTION*/
+.service-section {
+    background: url(../../assets/images/service-bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.service-section h2 {
+    color: #fff;
+}
+
+.service-wrap {
+    padding: 40px 0
+}
+
+.service-box {
+    text-align: center;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.service-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border: 1px solid #fff;
+    width: 180px;
+    height: 180px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 15px;
+}
+
+.service-box i {
+    font-size: 40px;
+    color: #fff;
+    line-height: 100px;
+    z-index: 100;
+    position: relative;
+}
+
+.service-box h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    z-index: 100;
+    position: relative;
+}
+
+.service-box:hover.service-box::after {
+    background: #fff;
+    border: 1px solid transparent;
+}
+
+.service-box:hover i,
+.service-box:hover h3 {
+    color: #2c3e50;
+}
+
+.service-box i,
+.service-box h3,
+.service-box::after {
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+/*HOMEPAGE TWO*/
+#homeTwo {
+    position: relative;
+}
+
+#homeTwo:before {
+    content: "";
+    background-color: rgba(26, 30, 35, 0.90);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.home-version-two {
+    z-index: 0;
+    overflow: hidden;
+}
+
+.home-version-two::before {
+    z-index: -100;
+}
+
+.personal-info {
+    color: #fff;
+    padding: 0 0 0 15px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+.personal-info h1 {
+    font-size: 60px;
+    line-height: 80px;
+    margin-bottom: 16px;
+}
+
+.personal-info h1 span {
+    color: #68c3a3;
+}
+
+.personal-info p {
+    margin-bottom: 40px;
+}
+
+.video-introducing {
+    background: url(../images/video-bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 390px;
+    border: 5px solid #FFF;
+    padding: 5px;
+    box-shadow: 0 0px 0px 1px #eee;
+}
+
+
+
+/* effect================================================== */
+@keyframes ani1{
+    0%{opacity: 0;}
+    100%{opacity: 100;}
+}
+@keyframes ani2{
+    0%{opacity: 100;}
+    100%{opacity: 0;}
+}
+@keyframes ani3{
+    0%{transform: rotate(0)}
+    100%{transform: rotate(90deg)}
+}
+@keyframes ani4{
+    0%{transform: rotate(0)}
+    100%{transform: rotate(-90deg)}
+}
+
+/* effect - Portfolio */
+.add_effect{
+    position: relative;
+}
+.effect_all img{
+    width: inherit;
+    position: absolute;
+}
+.a-1{
+    top: 10%;
+    left: -15%;
+    animation: ani1 3s infinite alternate linear;
+}
+.a-2{
+    bottom: 30%;
+    right: -10%;
+    animation: ani2 3s infinite alternate linear;
+}
+.a-3-1{
+    top: 70%;
+    left: -35%;
+}
+.a-3-2{
+    top: 67%;
+    left: -25%;
+    animation: ani3 3s infinite alternate linear;
+}
+
+/* effect - sns-design */
+.b-1{
+    top: 30%;
+    left: -15%;
+    animation: ani1 1s infinite alternate linear;
+}
+.b-2{
+    top: 80%;
+    right: -10%;
+    animation: ani3 5s infinite alternate linear;
+}
+
+/* effect - artwork */
+.c-1{
+    top: 4%;
+    right: -6.5%;
+    animation: ani1 1s infinite alternate linear;
+}
+
+/* effect - resume */
+.resume-section .d-1{
+    width: 8%;
+    top: 15%;
+    right: -20%;
+}
+.d-2{
+    top: 34%;
+    right: -22%;
+}
+.d-3{
+    top: 38%;
+    right: -32%;
+}
+.d-4{
+    top: 70%;
+    left: -15%;
+    animation: ani1 2s infinite alternate linear;
+}
+.d-5{
+    top: 70%;
+    left: -10%;
+    animation: ani1 1.5s infinite alternate linear;
+}
+.d-6{
+    top: 83%;
+    left: -25%;
+    animation: ani3 2s infinite alternate linear;
+}
+.d-7{
+    top: 85%;
+    left: -32%;
+}
+.d-8{
+    top: 86%;
+    left: -32%;
+}
+
+/* effect - skills */
+.e-1{
+    top: -5%;
+    right: 8%;
+    animation: ani1 1s infinite alternate linear;
+}
+.e-2{
+    top: 5%;
+    right: 0%;
+    animation: ani2 1.2s infinite alternate linear;
+}
+
+/* effect - interview */
+.interview-section .f-1{
+    width: 8%;
+    top: 5%;
+    left: -15%;
+    animation: ani1 1s infinite alternate linear;
+}
+.f-2{
+    bottom: 0;
+    left: -15%;
+    animation: ani1 1s infinite alternate linear;
+}
+.f-3{
+    bottom: -5%;
+    left: -10%;
+}
+.f-4{
+    bottom: -16%;
+    left: -13%;
+    animation: ani3 2s infinite alternate linear;
+}
+.f-5{
+    top: 10%;
+    right: 5%;
+}
+.interview-section .f-6{
+    width: 10%;
+    top: -33%;
+    right: -33%;
+}
+.interview-section .f-7{
+    width: 20%;
+    top: 0%;
+    right: -33%;
+    animation: ani2 1s infinite alternate linear;
+}
+.interview-section .f-8{
+    width: 20%;
+    top: 90%;
+    right: -33%;
+}
+
+#about .col-md-7,
+#about .col-md-4 {
+  width: auto !important;   /* 기존 40%, 400px 덮어쓰기 */
+  float: none;               /* 그리드 내 정렬 충돌 방지 */
+}
+
+@media (min-width: 992px) {
+  /* 데스크탑에서는 원래 의도대로 7:4 비율로 정렬 */
+  #about .col-md-7 { float: left; width: 58.3333% !important; }
+  #about .col-md-4 { float: right; width: 33.3333% !important; }
+}
+
+/* 2) 절대배치 제거하고 문서 흐름으로 */
+#about .short-info {
+  position: static !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 0 20px;
+  max-width: 720px;          /* 너무 넓지 않게 최대폭만 제한 */
+}
+
+/* 3) 해시태그/칩 리스트는 줄바꿈/자동 칸폭 */
+#about .minseon_aboutme_ul {
+  margin: 20px 0 0 !important;
+  width: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+}
+#about .minseon_aboutme_ul li {
+  margin: 0 !important;
+  width: auto !important;
+}
+
+/* 4) 사진 박스는 고정값 대신 유동값 */
+#about .biography {
+  position: relative;
+}
+#about .myphoto {
+  width: 100% !important;
+  max-width: 420px;     /* 데스크탑에서 보기 좋은 최대폭 */
+  height: auto !important;
+  margin: 0 auto;       /* 중앙 정렬 */
+}
+#about .myphoto img {
+  position: static !important;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5) 과격한 마진/음수마진 제거 */
+#about .about_m { padding-top: 0 !important; }
+#about .minseon_aboutme_ul { margin-left: 0 !important; }
+#about .hashtag { justify-content: flex-start; }
+
+/* 6) 브레이크포인트: 모바일은 세로 스택, 데스크탑은 2열 */
+@media (max-width: 991px) {
+  #about .row > [class*="col-"] { float: none !important; width: 100% !important; }
+  #about .short-info h3 { margin-top: 16px; }
+  #about .minseon_aboutme_ul { justify-content: flex-start; }
+}
+
+#about .row { 
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+/* 모바일(≤991px): 사진 컬럼을 1번, 텍스트 컬럼을 2번으로 */
+@media (max-width: 991px) {
+  #about .col-md-7 { order: 1; width: 100% !important; }
+  #about .col-md-4 { order: 2; width: 100% !important; }
+
+  /* 사진 블록 여백/정렬 */
+  #about .myphoto { 
+    margin: 12px auto 20px;   /* 제목 아래 살짝 여백 */
+    max-width: 420px; 
+  }
+}
+
+/* 데스크탑(≥992px): 원래 2열 유지 (원하면 좌/우 바꾸려면 order만 조절) */
+@media (min-width: 992px) {
+  #about .col-md-7 { order: 2; }  /* 사진 오른쪽 */
+  #about .col-md-4 { order: 1; }  /* 텍스트 왼쪽 */
+}
+
+#about { width: 100% !important; }
+
+/* 2) 프로필 이미지 고정값/absolute 제거 + 크기 키우기 */
+#about .myphoto { 
+  width: 100% !important;
+  max-width: 520px;          /* 모바일/태블릿에서 화면에 꽉 차게 보이도록 */
+  margin: 12px auto 24px;    /* 제목 아래 여백 */
+}
+#about .myphoto img {
+  position: static !important;
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 10px;        /* 취향: 모서리 둥글게 */
+}
+
+/* .effect01이 사진 크기를 300px로 고정하는 걸 무력화 */
+#about .myphoto img.effect01 {
+  width: 100% !important;
+  top: auto !important;
+  right: auto !important;
+}
+
+/* 3) 모바일에서 순서: 제목 → 사진 → 소개글 */
+#about .row { display: flex; flex-wrap: wrap; }
+@media (max-width: 991px) {
+  #about .col-md-7 { order: 1; width: 100% !important; } /* 사진 */
+  #about .col-md-4 { order: 2; width: 100% !important; } /* 소개글/태그 */
+}
+
+/* 4) 혹시 모를 겹침/가리기 방지 */
+#about, #about * { overflow: visible !important; }
+
+/* ===== About (Figma 맞춤 타이트 버전) ===== */
+
+/* 사진-텍스트 간격을 더 좁게 */
+.about-wrap{
+  display:flex;
+  align-items:flex-start;
+  gap:100px;                 /* (기존 40px → 24px) */
+}
+
+.about-img{
+  width: clamp(200px, 15vw, 500px); 
+  height:auto;
+  border-radius:8px;
+  display:block;
+}
+
+/* 텍스트 영역 최대폭을 줄여서 라인 길이 안정화 */
+.about-text{
+    
+  flex:1 1 0%;
+  max-width:700px;          /* 본문 라인 길이 짧게 */
+}
+
+#minseon_header{
+  position: relative;         /* 자식 절대배치 기준 */
+  height: 800px;              /* 기존 높이 그대로 */
+  background: none !important;/* 기존 bg 이미지 끄기 */
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* 배경 비디오: 컨테이너 꽉 채우기 */
+#minseon_header .hero-video{
+  position: absolute;
+  inset: 0;                   /* top/right/bottom/left: 0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* 비율 유지하며 꽉 채움 */
+  z-index: 0;
+  display: block;
+}
+
+/* 위에 얹히는 타이틀 이미지는 항상 비디오 위로 */
+#minseon_header > h1{
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  width: 100%;               /* 기존 값 유지 */
+  height: 1000px;              /* 기존 값 유지 */
+  padding-top: 150px;
+}
+
+
+:root{
+  --nav-h: 0px; /* 상단 고정 내비가 있으면 높이를 여기에 넣어줘 (예: 64px) */
+}
+
+/* 섹션 자체가 뷰포트 꽉 차게 */
+#home{
+  position: relative;
+  min-height: calc(100svh - var(--nav-h)); /* 모바일 안전 뷰포트 */
+  margin: 0; 
+  padding: 0;
+  overflow: clip;
+}
+
+/* 배너 컨테이너: 중앙 정렬 + 오버플로우 잘라내기 */
+#minseon_header{
+  position: relative;
+  min-height: calc(100svh - var(--nav-h));
+  display: flex;
+  align-items: center;     /* 수직 가운데 */
+  justify-content: center; /* 수평 가운데 */
+  overflow: hidden;
+  background: none !important; /* 예전 배경 제거 */
+}
+
+/* 배경 영상: 배너 꽉 채우기 (짤림 포인트는 object-position으로 조절) */
+#minseon_header .hero-video{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       
+  object-position: 50% 40%; /* 위가 잘리면 50% 30% 등으로 조금 위로 당겨줘 */
+  display: block;
+  z-index: 0;
+}
+
+/* 중앙 타이틀(이미지/텍스트)은 영상 위로 */
+#minseon_header > h1{
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+/* 타이틀 이미지 반응형 크기 */
+#minseon_header > h1 img{
+  width: min(72vw, 900px);
+  height: auto;
+}
+
+/* 스크롤 유도 마우스 아이콘이 있다면 영상 위로 */
+
+@media (max-width: 1000px){
+  #minseon_header > h1 img{
+    width: min(400px, 700px) !important;
+  }
+}
+
+/* 모바일 ↓ */
+@media (max-width: 600px){
+  #minseon_header{ min-height: 500px; }
+  #minseon_header > h1 img{
+    width: 86vw !important;     /* 화면 폭에 맞춰 크게 */
+  }
+}
+
+#minseon_header {
+    position: relative;
+    height: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 제목·본문 간격 축소 */
+.about-title{
+  margin:0 0 10px;
+  font-size:20px;           /* 필요시 17~19로 조절 */
+  line-height:1.5;
+  font-weight:700;
+}
+.about-desc{
+    padding-top: 20px;
+  font-size:16px;           /* 본문 작게 */
+  line-height:1.7;
+  color:#333;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== 키워드 칩: 3개씩 2줄, 더 작고 짧게 ===== */
+.about-tags{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(3, auto); 
+  justify-content:start;
+  column-gap:18px;
+  row-gap:18px;
+  padding:0;
+}
+
+
+.about-tags a{
+  display:block;
+  padding:10px 25px;        
+  font-size:18px;        
+  line-height:1;
+  border:1px solid #cfe2f3; 
+  background:#f7fbff;      
+  color:#4a6fa9;   
+  border-radius:9999px;
+  font-weight:500;
+  white-space:nowrap;
+  transition:background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.about-tags a:hover{
+  background:#e9f3ff;
+  border-color:#9cc3f2;
+  color:#2b5e9b;
+}
+
+
+#about .short-info{ position:static; margin:0; width:auto; }
+#about .col-md-7{ width:auto !important; float:none; }
+.minseon_aboutme_ul{ display:none; } 
+
+
+@media (max-width: 991px){
+  .about-wrap{ flex-direction:column; gap:20px; }
+  .about-img{ width: clamp(160px, 42vw, 200px); }
+  .about-tags{ grid-template-rows:repeat(2, auto); }
+}
+
+.minseon_aboutme_ul{
+  /* 위치/폭 */
+  margin: 16px 0 0;
+  padding: 0;
+  /* 3열 그리드: 칩은 가로 160px, 세로 44px 기준 */
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  grid-auto-rows: 44px;
+  /* 좌우 간격 40px, 위아래 14px */
+  column-gap: 40px;
+  row-gap: 14px;
+
+  /* 필요 시 오른쪽으로만 정렬하지 말고 왼쪽에서부터 배치 */
+  justify-content: start;
+}
+
+/* li 기본 간격/폭 초기화 (이전 스타일 덮기) */
+.minseon_aboutme_ul li{
+  margin: 0 !important;
+  width: auto !important;
+  list-style: none;
+}
+
+/* 칩 버튼 */
+.minseon_aboutme_ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;      /* ← 텍스트 정중앙 */
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #5b6670;               /* 회색 글자 */
+  background: #e6f3fb;          /* 은은한 하늘색 배경 */
+  border: 0;                    /* 테두리 제거 */
+  border-radius: 9999px;        /* 알약 모양 */
+  box-shadow: none;
+  transition: transform .15s ease, background-color .15s ease;
+}
+
+.minseon_aboutme_ul li a:hover{
+  background: #d8eef9;          /* 살짝 진하게 */
+  transform: translateY(-1px);
+}
+
+/* 반응형: 태블릿 이하에서는 2열로 */
+@media (max-width: 991px){
+  .minseon_aboutme_ul{
+    grid-template-columns: repeat(2, 160px);
+    column-gap: 28px;
+  }
+}
+
+/* 아주 작은 화면에서는 1열 */
+@media (max-width: 480px){
+  .minseon_aboutme_ul{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 42px;
+    column-gap: 0;
+    row-gap: 10px;
+  }
+  .minseon_aboutme_ul li a{ font-size: 15px; }
+}
+
+:root{
+  --chip-w: 200px;   /* 가로폭(더 키우려면 220~240px) */
+  --chip-h: 56px;    /* 높이(더 키우려면 60~64px)    */
+  --chip-font: 18px; /* 글자 크기                    */
+  --chip-gap-x: 44px;/* 열 간격                      */
+  --chip-gap-y: 16px;/* 행 간격                      */
+}
+
+/* 그리드(3 x 2) 강제 적용 */
+#about .minseon_aboutme_ul{
+  margin:16px 0 0 !important;
+  padding:0 !important;
+  display:grid !important;
+  grid-template-columns: repeat(3, var(--chip-w)) !important;
+  grid-auto-rows: var(--chip-h) !important;
+  column-gap: var(--chip-gap-x) !important;
+  row-gap: var(--chip-gap-y) !important;
+  justify-content:start !important;   /* 왼쪽부터 배치 */
+  width:auto !important;
+}
+
+/* li 기본값 초기화 */
+#about .minseon_aboutme_ul li{
+  list-style:none !important;
+  margin:0 !important;
+  width:auto !important;
+}
+
+/* 알약 모양 칩: 텍스트 정확히 “가운데” */
+#about .minseon_aboutme_ul li a{
+  display:flex !important;
+  align-items:center !important;      /* 수직 가운데 */
+  justify-content:center !important;  /* 수평 가운데 */
+  width:100% !important;
+  height:100% !important;
+  padding:0 18px !important;
+  font-size:var(--chip-font) !important;
+  font-weight:600 !important;
+  line-height:1 !important;
+  text-align:center !important;
+  white-space:nowrap !important;
+  color:#5b6670 !important;
+  background:#e6f3fb !important;
+  border:0 !important;
+  border-radius:9999px !important;
+  box-shadow:none !important;
+  transition:transform .15s ease, background-color .15s ease;
+}
+#about .minseon_aboutme_ul li a:hover{
+  background:#d8eef9 !important;
+  transform:translateY(-1px);
+}
+
+/* 반응형(선택) – 태블릿↓ 2열, 모바일↓ 1열 */
+@media (max-width: 991px){
+  #about .minseon_aboutme_ul{
+    grid-template-columns: repeat(2, var(--chip-w)) !important;
+  }
+}
+@media (max-width: 480px){
+  #about .minseon_aboutme_ul{
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: calc(var(--chip-h) - 6px) !important;
+  }
+  #about .minseon_aboutme_ul li a{ font-size: calc(var(--chip-font) - 2px) !important; }
+}
+
+
+
+
+/* project2 */
+#project2{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+
+}
+
+#project2 h2{
+    margin-bottom: 30px;
+}
+
+.project2_img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.youssoful_web{
+    font-size: 23px;
+    padding-top: 40px;
+    
+}
+
+.project2_youssoful{
+    padding-left: 22px;
+    font-weight: 400;
+    border-bottom: 1px solid #ddddddb0;
+}
+
+.youssoful_text{
+    margin-top: -7px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.project2_youssoful a{ color:inherit; text-decoration:none; }
+.project2_youssoful p{ transition:color .2s ease; }
+
+/* 이미지에 호버하면 아래 글자 파란색 */
+#project2:has(.project2_img:hover) .project2_youssoful .youssoful_web,
+#project2:has(.project2_img:hover) .project2_youssoful .youssoful_text{
+  color:#2471A8;
+}
+
+/* 글자 영역에 올려도 파랗게 (옵션) */
+.project2_youssoful:hover .youssoful_web,
+.project2_youssoful:hover .youssoful_text{
+  color:#2471A8;
+}
+
+
+/* project2 */
+
+
+
+.post-thumbnail{ overflow:hidden; }
+
+/* 2) 이미지 채우기: contain → cover 로 */
+#portfolio .col-sm-6:nth-child(2) .post-thumbnail img{
+  object-fit: cover !important;   /* 웹가이드 카드 덮어쓰기 */
+  object-position: center;
+}
+.post-thumbnail img{
+  width:100%;
+  height:100%;
+  object-fit: cover;               /* 기본도 cover */
+  object-position:center;
+  transform:scale(1);
+  transition:transform .6s ease;
+  display:block;
+}
+
+/* 3) 호버는 썸네일 안의 img만 확대 */
+.blog-post-wrapper:hover .post-thumbnail img{
+  transform: scale(1.08);
+}
+
+/* (선택) 전역 규칙 무력화 – 기존에 남아있다면 아래로 덮어쓰기 */
+.blog-post-wrapper:hover img{ transform:none; }
+
+.project2_img{
+  /* 이미 radius는 있음 → overflow만 추가 */
+  overflow: hidden;                 /* 둥근모서리 밖 잘라내기 */
+}
+
+.project2_img img{
+  display: block;
+  width: 100%;                      /* 원래 레이아웃 유지 */
+  height: auto;                     /* 원래 레이아웃 유지 */
+  border-radius: inherit;           /* 부모 radius 계승 */
+  opacity: .8;                      /* 기본 살짝 톤다운 */
+  transition: transform .5s ease, opacity .5s ease;  /* 첫 카드와 동일 */
+}
+
+.project2_img:hover img{
+  transform: scale(1.05);           /* 살짝 확대 */
+  opacity: 1;                       /* 선명하게 */
+}
+
+.youssoful_text{
+    color: #585858;
+}
